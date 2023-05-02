@@ -55,10 +55,17 @@ nav ul li a:hover {
   border-radius: 30px;
   transition: 0.4s;
 }
-.btn-connect:hover,
+
 .btn:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+.btn-connect:hover{
+    /* display: none; */
+    cursor: pointer;
+    background: #fff;
+    color: red;
 }
 .content {
   position: absolute;
