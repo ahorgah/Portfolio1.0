@@ -10,6 +10,7 @@
   background-image: url(../img/hero-bg-1.png);
   background-size: cover;
   background-position: center;
+  background-color: antiquewhite;
 }
 nav {
   display: flex;
