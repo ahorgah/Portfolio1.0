@@ -7,9 +7,10 @@
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url(../img/hero-bg-1.png);
-  background-size: cover;
+  /* background-image: url(../img/hero-bg-1.png); */
+  /* background-size: cover; */
   background-position: center;
+  background-repeat: no-repeat;
   background-color: antiquewhite;
 }
 nav {
@@ -62,17 +63,35 @@ nav ul li a:hover {
   transform: scale(1.2);
 }
 
-.btn-connect:hover{
-    /* display: none; */
-    cursor: pointer;
-    background: #fff;
-    color: red;
+.btn-connect:hover {
+  /* display: none; */
+  cursor: pointer;
+  background: #fff;
+  color: red;
 }
 .content {
   position: absolute;
   top: 50%;
   left: 8%;
   transform: translateY(-50%);
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+.content .info{
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+}
+.hero-img{
+  /* background: rebeccapurple   ; */
+  display: flex;
+  width: 50vw;
+  justify-items: right;
+  align-items: flex-end;
+  justify-content: end;
 }
 h1 {
   color: #0f0058;
@@ -127,7 +146,8 @@ h4 {
 .about {
   width: 100%;
   padding: 100px 0px;
-  background-color: #191919;
+  background-color: #2e2c2c;
+  
 }
 
 .about img {
@@ -136,12 +156,15 @@ h4 {
 }
 .about-text {
   width: 550px;
+  
+
 }
 .main {
   width: 1130px;
   max-width: 95%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
@@ -150,6 +173,8 @@ h4 {
   font-size: 75px;
   text-transform: capitalize;
   margin-bottom: 20px;
+  text-align: center;
+  
 }
 .about-text h5 {
   color: white;
@@ -157,6 +182,8 @@ h4 {
   font-size: 22px;
   margin-bottom: 25px;
   text-transform: capitalize;
+  /* text-align: center; */
+
 }
 .about-text p {
   color: #fff;
@@ -164,6 +191,7 @@ h4 {
   line-height: 28px;
   font-size: 18px;
   margin-bottom: 45px;
+  /* text-align: center; */
 }
 button {
   background-color: red;
@@ -181,7 +209,6 @@ button:hover {
   border: 2px solid red;
   cursor: pointer;
   transform: scale(1.2);
-  
 }
 .service {
   background: #101010;
@@ -244,7 +271,6 @@ h5 {
   background-color: transparent;
   border: 2px solid red;
   cursor: pointer;
-  
 }
 .contact-me {
   width: 100%;
@@ -281,7 +307,7 @@ footer {
   position: relative;
   width: 100%;
   height: 400px;
-  background: #101010;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -289,12 +315,12 @@ footer {
 }
 footer p:nth-child(1) {
   font-size: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
   font-weight: bold;
 }
 footer p:nth-child(2) {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 17px;
   width: 500px;
   text-align: center;
@@ -302,6 +328,7 @@ footer p:nth-child(2) {
 }
 .social {
   display: flex;
+  list-style: none;
 }
 .social a {
   width: 45px;
