@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .hero {
-  height: 100vh;
+  height: auto;
   max-width: 100%;
   padding: 50px 0;
   background-image: url(../img/hero-bg-1.png);
